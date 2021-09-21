@@ -63,7 +63,7 @@ export default function BasicTabs() {
     }
     console.log(sendPayload);
     //POST API
-    axios.post('https://roopesh-k.herokuapp.com/login',sendPayload)
+    axios.post('https://financepeer-be.herokuapp.com/login',sendPayload)
     .then((res)=>{
         console.log(res)
         history.push({
@@ -96,7 +96,7 @@ export default function BasicTabs() {
     //POST API if passwords match
     if(payload.password===payload.confPassword){
         console.log(payload);
-        axios.post('https://roopesh-k.herokuapp.com/user',sendPayload,{headers} )
+        axios.post('https://financepeer-be.herokuapp.com/login',sendPayload,{headers} )
         .then((res)=>{
             console.log(res)
             setErrorMsg()

@@ -66,7 +66,7 @@ export default function BasicTabs() {
       console.log(fileData)
       setErrorMsg(<span style={{color:"blue"}}>Please wait while data is being uploaded.</span>)
       setDisabled(true)
-    axios.post('https://roopesh-k.herokuapp.com/data',fileData)
+    axios.post('https://financepeer-be.herokuapp.com/data',fileData)
     .then((res)=>{
         console.log(res)
         setErrorMsg(<span style={{color:"green"}}>{res.data}</span>)

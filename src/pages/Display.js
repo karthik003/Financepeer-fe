@@ -66,7 +66,7 @@ function Display() {
       ]);
 
       useEffect(()=>{
-        axios.get('https://roopesh-k.herokuapp.com/data')
+        axios.get('https://financepeer-be.herokuapp.com/data')
         .then((res)=>{
             console.log(res.data)
             setData(res.data)
